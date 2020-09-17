@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="checkout">Checkout</h1>
+      <section class="contact">
+        <div class="contact--info">
+          <h4>Contact information</h4>
+          <form action="#" method="get" class="form">
+            <div class="form-email">
+              <label for="email">Email </label>
+              <div class="input-area">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Enter your email..."
+                />
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="form-phone">
+              <label for="phone">Phone </label>
+              <div class="input-area">
+                <input
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="Enter your phone..."
+                />
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="contact--address">
+          <h4>Shipping address</h4>
+          <form action="" method="get" class="form">
+            <div class="form-name">
+              <label for="name">Full name </label>
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Enter your Full name..."
+                />
+                <i class="fas fa-user" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="form-address">
+              <label for="address">Address </label>
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  required
+                  placeholder="Enter your address..."
+                />
+                <i class="fas fa-home" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="form-city">
+              <label for="city">City</label>
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  required
+                  placeholder="Enter your city..."
+                />
+                <i class="fas fa-city" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="country-postcode">
+              <div class="country">
+                <label for="country-select">Country</label>
+                <div class="input-area">
+                  <i class="fas fa-globe-europe" aria-hidden="true"></i>
+                  <select name="countries" id="country-select">
+                    <option value="turkey" selected>Turkey</option>
+                    <option value="germany">Germany</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                  </select>
+                </div>
+              </div>
+              <div class="postcode">
+                <label for="postcode">Post Code</label>
+                <div class="input-area">
+                  <i class="fas fa-mail-bulk" aria-hidden="true"></i>
+                  <input
+                    type="text"
+                    id="postcode"
+                    name="postcode"
+                    required
+                    placeholder="Enter your postal code..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="preference"
+                name="preference"
+                checked
+              />
+              <label for="preference">See this information next time</label>
+            </div>
+          </form>
+        </div>
+      </section>
+      <aside class="basket">
+        <div class="product">
+          <img src="./IMG/photo1.png" alt="bag" />
+          <div class="product-info">
+            <h2>Vintage Backbag</h2>
+            <p>
+              <strong>$54.99</strong>
+              <span class="line-through">$94.99</span>
+            </p>
+            <div class="quantity-controller">
+              <button class="plus">
+                <i class="fas fa-minus"></i>
+              </button>
+              <p>1</p>
+              <button class="plus">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./IMG/photo2.png" alt="bag" />
+          <div class="product-info">
+            <h2>Levi Shoes</h2>
+            <p>
+              <strong>$74.99</strong>
+              <span class="line-through">$124.99</span>
+            </p>
+            <div class="quantity-controller">
+              <button class="plus">
+                <i class="fas fa-minus"></i>
+              </button>
+              <p>1</p>
+              <button class="plus">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="fazi">
+          <div class="details">
+            <p>Shipping</p>
+            <p>$19</p>
+          </div>
+          <div class="details">
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
+        </div>
+      </aside>
+      <button class="continue">Continue</button>
+    </main>
+  </body>
+</html>

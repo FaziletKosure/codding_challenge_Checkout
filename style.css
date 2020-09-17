@@ -1,0 +1,182 @@
+@media (max-width: 900px) {
+  main {
+    grid-template-areas: "header" "product" "contact" "button" !important;
+  }
+  main aside {
+    width: 90% !important;
+    left: 0 !important;
+    height: 95% !important;
+  }
+  main aside .product .quantity-controller {
+    width: 50% !important;
+    height: 35px;
+  }
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+body main {
+  width: 80%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: "header header" "contact product" "button button";
+}
+body main h1 {
+  grid-area: header;
+  font-weight: normal;
+  text-align: center;
+  margin: 20px 0;
+}
+body main h4 {
+  font-size: 18px;
+  color: #333;
+  margin: 15px 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+body main section {
+  grid-area: contact;
+}
+body main section div:nth-child(5) {
+  display: flex;
+  margin: 20px 0;
+}
+body main section .contact--info {
+  margin-bottom: 60px;
+}
+body main section .country {
+  margin-right: 20px;
+}
+body main section .country-postcode {
+  display: flex;
+  margin-top: 30px;
+}
+body main section .input-area {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+body main section .input-area i {
+  position: absolute;
+  color: #828282;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+}
+body main aside {
+  grid-area: product;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  padding: 10px 20px;
+  position: relative;
+  width: 60%;
+  height: 70%;
+  left: 20%;
+}
+body main aside .fazi {
+  margin-top: 40px;
+}
+body main aside .fazi .details {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #bdbdbd;
+  height: 40px;
+  width: 100%;
+}
+body main aside .product {
+  display: flex;
+}
+body main aside .product .product-info {
+  width: 100%;
+}
+body main aside .product .product-info h2 {
+  font-size: 16px;
+  color: #4e5150;
+  margin: 5px 0;
+}
+body main aside .product strong {
+  color: #f2994a;
+  font-size: 16px;
+  font-weight: 500;
+}
+body main aside .product .line-through {
+  font-size: 12px;
+  color: #4e5150;
+  margin: 5px 0;
+  text-decoration: line-through;
+}
+body main aside .product .plus {
+  margin: 5px 0;
+  border: 0;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+body main aside .product .plus i {
+  font-size: 12px;
+  padding: 0 6px;
+}
+body main aside .product .quantity-controller {
+  border-radius: 5px;
+  border: 1px solid #888888;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  position: relative;
+}
+body main aside img {
+  width: 30%;
+  border-radius: 10px;
+  margin: 20px;
+}
+body main .continue {
+  grid-area: button;
+  width: 15%;
+  padding: 14px 0;
+  border-radius: 10px;
+  background-color: #f2994a;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+}
+body main input {
+  border: 1px solid #828282;
+  padding: 8px 5px 8px 35px;
+  color: #828282;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 100%;
+  height: 22px;
+}
+body main input[type=checkbox] {
+  width: 10%;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: -3%;
+}
+body main label {
+  font-size: 12px;
+  color: #4f4f4f;
+  margin: 10px 0;
+  position: relative;
+  display: block;
+}
+body main select {
+  border: 1px solid #828282;
+  padding: 12px 5px 12px 35px;
+  color: #828282;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
