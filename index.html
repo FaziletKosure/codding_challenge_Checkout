@@ -134,16 +134,16 @@
           <div class="product-info">
             <h2>Vintage Backbag</h2>
             <p>
-              <strong>$54.99</strong>
-              <span class="line-through">$94.99</span>
+              <strong class="price1-discounted">$54.99</strong>
+              <span class="line-through price1">$94.99</span>
             </p>
             <div class="quantity-controller">
               <button class="plus">
-                <i class="fas fa-minus"></i>
+                <i class="fas fa-minus" onclick="update1('-')"></i>
               </button>
-              <p>1</p>
+              <p class="counter">1</p>
               <button class="plus">
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus" onclick="update1('+')"></i>
               </button>
             </div>
           </div>
@@ -153,16 +153,16 @@
           <div class="product-info">
             <h2>Levi Shoes</h2>
             <p>
-              <strong>$74.99</strong>
-              <span class="line-through">$124.99</span>
+              <strong id="price2-discounted">$74.99</strong>
+              <span class="line-through price2">$124.99</span>
             </p>
             <div class="quantity-controller">
               <button class="plus">
-                <i class="fas fa-minus"></i>
+                <i class="fas fa-minus" onclick="update2('-')"></i>
               </button>
-              <p>1</p>
+              <p class="counter">1</p>
               <button class="plus">
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus" onclick="update2('+')"></i>
               </button>
             </div>
           </div>
@@ -170,15 +170,16 @@
         <div class="fazi">
           <div class="details">
             <p>Shipping</p>
-            <p>$19</p>
+            <p class="shipping">$19</p>
           </div>
           <div class="details">
             <p>Total</p>
-            <p>$148.98</p>
+            <p class="total">$148.98</p>
           </div>
         </div>
       </aside>
       <button class="continue">Continue</button>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

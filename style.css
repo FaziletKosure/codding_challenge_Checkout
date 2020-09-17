@@ -20,6 +20,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
+  max-width: 1400px;
 }
 body main {
   width: 80%;
