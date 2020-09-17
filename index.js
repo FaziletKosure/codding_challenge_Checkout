@@ -35,12 +35,7 @@ function update1(e){
             normalPrice1 =  dp1c;
         discountPrice1 =dp1c;
         }
-        // else if(counter== 0){
-        //     counter =  0;
-            
-        //     normalPrice1 =  np1c;
-        // discountPrice1 =dp1c;
-        // }
+     
        
     }
     document.getElementsByClassName('counter')[0].innerText=counter;
