@@ -11,6 +11,10 @@
     width: 50% !important;
     height: 35px;
   }
+
+  .continue {
+    width: 35% !important;
+  }
 }
 body {
   margin: 0 auto;
