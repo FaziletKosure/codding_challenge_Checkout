@@ -93,6 +93,26 @@ body main aside {
   height: 75%;
   left: 20%;
 }
+body main aside .basket_product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+body main aside .basket_product .product_count {
+  text-align: center;
+  margin-left: 6px;
+  background-color: pink;
+  border-radius: 50%;
+  width: 25px;
+  font-weight: bold;
+  position: absolute;
+  left: 98%;
+  top: -66%;
+}
+body main aside .basket_product .fa-shopping-cart {
+  font-size: 20px;
+}
 body main aside .fazi {
   margin-top: 40px;
 }

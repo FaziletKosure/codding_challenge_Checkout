@@ -60,12 +60,31 @@ body {
       border-radius: 10px;
       background-color: #eeeeee;
       padding: 10px 20px;
-
       position: relative;
       width: 80%;
       height: 75%;
       left: 20%;
+      .basket_product {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
 
+        .product_count {
+          text-align: center;
+          margin-left: 6px;
+          background-color: pink;
+          border-radius: 50%;
+          width: 25px;
+          font-weight: bold;
+          position: absolute;
+          left: 98%;
+          top: -66%;
+        }
+        .fa-shopping-cart {
+          font-size: 20px;
+        }
+      }
       .fazi {
         margin-top: 40px;
 
