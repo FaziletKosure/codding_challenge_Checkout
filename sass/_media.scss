@@ -28,6 +28,14 @@
 }
 @media (max-width: 600px) {
   .basket {
+    .fa-sync-alt {
+      width: 200px;
+      height: 150px;
+      font-weight: bold;
+      padding-top: 40px;
+      margin-left: 14%;
+      margin-top: 8%;
+    }
     .product {
       .quantity-controller {
         width: 70% !important;

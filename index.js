@@ -5,11 +5,32 @@ let shipping=parseFloat(document.getElementsByClassName('shipping')[0].innerText
 let product_count=parseInt(document.getElementsByClassName('product_count')[0].innerText);
 let del1=document.getElementsByClassName('del1');
 let del2=document.getElementsByClassName('del2');
+let basket=document.querySelector(".basket");
 
 console.log(normalPrice1);
 const dp1c=discountPrice1;
 console.log(dp1c);
 const np1c=normalPrice1;
+
+// remove func
+
+function remove1() {
+    let myobj1 = document.querySelector("#pr1");
+    myobj1.innerHTML=''
+    if (document.querySelector("#pr2").innerHTML==''){
+        basket.innerHTML='<i class="fas fa-sync-alt"></i>';
+    }
+
+  }
+  function remove2() {
+    let myobj2 = document.querySelector("#pr2");
+    myobj2.innerHTML=''
+    if (document.querySelector("#pr1").innerHTML==''){
+        console.log('ifififif');
+        basket.innerHTML='<i class="fas fa-sync-alt"></i>';
+    }
+  }
+//   
 function update1(e){
     const plusSign=document.getElementsByClassName('fa-plus')[0].innerText;
     const minusSign=document.getElementsByClassName('fa-minus')[0].innerText;
