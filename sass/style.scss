@@ -64,6 +64,7 @@ body {
       width: 80%;
       height: 75%;
       left: 20%;
+
       .basket_product {
         display: flex;
         flex-direction: column;
@@ -103,6 +104,12 @@ body {
         display: flex;
         .product-info {
           width: 100%;
+          .delete {
+            font-size: 25px;
+            color: #828282;
+            // margin-top: 20px;
+            margin-left: 189px;
+          }
           h2 {
             font-size: 16px;
             color: #4e5150;

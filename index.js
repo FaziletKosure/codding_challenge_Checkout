@@ -3,6 +3,9 @@ console.log(discountPrice1);
 let normalPrice1=parseFloat(document.getElementsByClassName('price1')[0].innerText.replace('$',''));
 let shipping=parseFloat(document.getElementsByClassName('shipping')[0].innerText.replace('$',''));
 let product_count=parseInt(document.getElementsByClassName('product_count')[0].innerText);
+let del1=document.getElementsByClassName('del1');
+let del2=document.getElementsByClassName('del2');
+
 console.log(normalPrice1);
 const dp1c=discountPrice1;
 console.log(dp1c);

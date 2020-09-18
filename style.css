@@ -27,6 +27,13 @@
   .basket .product .quantity-controller button {
     margin: 6px 0 !important;
   }
+  .basket .product .product-info .delete {
+    margin-left: 130px !important;
+  }
+
+  .basket_product .product_count {
+    left: 96% !important;
+  }
 }
 body {
   margin: 0 auto;
@@ -130,6 +137,11 @@ body main aside .product {
 }
 body main aside .product .product-info {
   width: 100%;
+}
+body main aside .product .product-info .delete {
+  font-size: 25px;
+  color: #828282;
+  margin-left: 189px;
 }
 body main aside .product .product-info h2 {
   font-size: 16px;
