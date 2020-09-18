@@ -59,11 +59,8 @@ function update1(e){
 };
 // update1()
 let discountPrice2=parseFloat(document.getElementById('price2-discounted').innerHTML.replace('$',''));
-console.log(discountPrice2);
 let normalPrice2=parseFloat(document.getElementsByClassName('price2')[0].innerText.replace('$',''));
-console.log(normalPrice2);
 const dp2c=discountPrice2;
-console.log(dp1c);
 const np2c=normalPrice2;
 function update2(e){
     let shipping=parseFloat(document.getElementsByClassName('shipping')[0].innerText.replace('$',''));
