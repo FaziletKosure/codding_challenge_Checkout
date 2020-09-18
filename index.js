@@ -27,7 +27,7 @@ function remove1() {
 function update1(e){
     const plusSign=document.getElementsByClassName('fa-plus')[0].innerText;
     const minusSign=document.getElementsByClassName('fa-minus')[0].innerText;
-    let counter=parseInt(document.getElementsByClassName('counter')[0].innerText);
+    let counter=parseInt(document.querySelector('.counter1').innerText);
     let total=parseFloat(document.getElementsByClassName('total')[0].innerText.replace('$',''));
  
     if(e=='+'){
@@ -51,7 +51,7 @@ function update1(e){
             discountPrice1 =dp1c;
         }
     }
-    document.getElementsByClassName('counter')[0].innerText=counter;
+    document.querySelector('.counter1').innerText=counter;
     document.getElementsByClassName('price1-discounted')[0].innerText='$'+discountPrice1.toFixed(2);
     document.getElementsByClassName('price1')[0].innerText='$'+normalPrice1.toFixed(2);
     document.getElementsByClassName('total')[0].innerText='$'+total.toFixed(2); 
@@ -66,7 +66,7 @@ function update2(e){
     let shipping=parseFloat(document.getElementsByClassName('shipping')[0].innerText.replace('$',''));
     const plusSign=document.getElementsByClassName('fa-plus')[0].innerText;
     const minusSign=document.getElementsByClassName('fa-minus')[0].innerText;
-    let counter=parseInt(document.getElementsByClassName('counter')[1].innerText);
+    let counter=parseInt(document.querySelector('.counter2').innerText);
     let total=parseFloat(document.getElementsByClassName('total')[0].innerText.replace('$',''));
 
     if(e=='+'){
@@ -89,7 +89,7 @@ function update2(e){
             discountPrice2 =dp2c;
         }
     }
-    document.getElementsByClassName('counter')[1].innerText = counter;
+    document.querySelector('.counter2').innerText = counter;
     document.getElementById('price2-discounted').innerHTML='$'+discountPrice2.toFixed(2);
     document.getElementsByClassName('price2')[0].innerText='$'+normalPrice2.toFixed(2);
     document.getElementsByClassName('total')[0].innerText='$'+(total).toFixed(2);
