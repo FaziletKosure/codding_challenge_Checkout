@@ -18,7 +18,7 @@ function remove1() {
     let myobj1 = document.querySelector("#pr1");
     myobj1.innerHTML=''
     if (document.querySelector("#pr2").innerHTML==''){
-        basket.innerHTML='<i class="fas fa-sync-alt"></i>';
+        basket.innerHTML='<i class="fas fa-sync-alt" onclick="location.reload()"></i>';
     }
 
   }
@@ -26,8 +26,7 @@ function remove1() {
     let myobj2 = document.querySelector("#pr2");
     myobj2.innerHTML=''
     if (document.querySelector("#pr1").innerHTML==''){
-        console.log('ifififif');
-        basket.innerHTML='<i class="fas fa-sync-alt"></i>';
+        basket.innerHTML='<i class="fas fa-sync-alt" onclick="location.reload()"></i>';
     }
   }
 //   
