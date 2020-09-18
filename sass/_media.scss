@@ -13,13 +13,29 @@
 
       .product {
         .quantity-controller {
-          width: 50% !important;
-          height: 35px;
+          width: 45% !important;
+          height: 40px;
+          button {
+            margin: 6px 0 !important;
+          }
         }
       }
     }
   }
   .continue {
     width: 35% !important;
+  }
+}
+@media (max-width: 600px) {
+  .basket {
+    .product {
+      .quantity-controller {
+        width: 70% !important;
+        height: 35px;
+        button {
+          margin: 6px 0 !important;
+        }
+      }
+    }
   }
 }

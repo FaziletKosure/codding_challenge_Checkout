@@ -8,12 +8,24 @@
     height: 95% !important;
   }
   main aside .product .quantity-controller {
-    width: 50% !important;
-    height: 35px;
+    width: 45% !important;
+    height: 40px;
+  }
+  main aside .product .quantity-controller button {
+    margin: 6px 0 !important;
   }
 
   .continue {
     width: 35% !important;
+  }
+}
+@media (max-width: 600px) {
+  .basket .product .quantity-controller {
+    width: 70% !important;
+    height: 35px;
+  }
+  .basket .product .quantity-controller button {
+    margin: 6px 0 !important;
   }
 }
 body {
@@ -77,8 +89,8 @@ body main aside {
   background-color: #eeeeee;
   padding: 10px 20px;
   position: relative;
-  width: 60%;
-  height: 70%;
+  width: 80%;
+  height: 75%;
   left: 20%;
 }
 body main aside .fazi {
@@ -132,8 +144,18 @@ body main aside .product .quantity-controller {
   border: 1px solid #888888;
   display: flex;
   justify-content: space-around;
-  width: 40%;
+  width: 50%;
+  height: 40px;
+  align-items: center;
   position: relative;
+}
+body main aside .product .quantity-controller button {
+  margin: 10px 0;
+  border: 0;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
 }
 body main aside img {
   width: 30%;
