@@ -2,6 +2,7 @@ let discountPrice1=parseFloat(document.getElementsByClassName('price1-discounted
 console.log(discountPrice1);
 let normalPrice1=parseFloat(document.getElementsByClassName('price1')[0].innerText.replace('$',''));
 let shipping=parseFloat(document.getElementsByClassName('shipping')[0].innerText.replace('$',''));
+let product_count=parseInt(document.getElementsByClassName('product_count')[0].innerText);
 console.log(normalPrice1);
 const dp1c=discountPrice1;
 console.log(dp1c);
@@ -11,12 +12,14 @@ function update1(e){
     const minusSign=document.getElementsByClassName('fa-minus')[0].innerText;
     let counter=parseInt(document.getElementsByClassName('counter')[0].innerText);
     let total=parseFloat(document.getElementsByClassName('total')[0].innerText.replace('$',''));
+ 
     if(e=='+'){
         counter +=1;
         console.log('counter',counter);
         normalPrice1 =  np1c*counter;
         discountPrice1 =dp1c*counter;
         total=discountPrice1+discountPrice2;
+        product_count ++;
        
         console.log(normalPrice1);   
     }
@@ -27,10 +30,11 @@ function update1(e){
             normalPrice1 =  np1c*counter;
             discountPrice1 =dp1c*counter;
             total=discountPrice1+discountPrice2;
+            product_count --;
         }
         else if(counter== 1){
-            counter -=  1;
-            total=discountPrice2+0;
+            // counter -=  1;
+            // total=discountPrice2+0;
             
             normalPrice1 =  dp1c;
         discountPrice1 =dp1c;
@@ -42,6 +46,7 @@ function update1(e){
     document.getElementsByClassName('price1-discounted')[0].innerText='$'+discountPrice1.toFixed(2);
     document.getElementsByClassName('price1')[0].innerText='$'+normalPrice1.toFixed(2);
     document.getElementsByClassName('total')[0].innerText='$'+total.toFixed(2); 
+    document.getElementsByClassName('product_count')[0].innerText=product_count;
 };
 // update1()
 let discountPrice2=parseFloat(document.getElementById('price2-discounted').innerHTML.replace('$',''));
@@ -57,7 +62,6 @@ function update2(e){
     const minusSign=document.getElementsByClassName('fa-minus')[0].innerText;
     let counter=parseInt(document.getElementsByClassName('counter')[1].innerText);
     let total=parseFloat(document.getElementsByClassName('total')[0].innerText.replace('$',''));
-    
 
     if(e=='+'){
         counter = counter+1;
@@ -65,6 +69,8 @@ function update2(e){
         normalPrice2 =  np2c*counter;
         discountPrice2 =dp2c*counter;
         total=discountPrice1+discountPrice2;
+        product_count++;
+        console.log(product_count);
     }
     else if(e=='-'){
         if(counter > 1){
@@ -72,22 +78,26 @@ function update2(e){
             normalPrice2 = np2c*counter;
             discountPrice2 =dp2c*counter;
             total=discountPrice1+discountPrice2;
+            product_count --;
+            console.log(product_count);
         }
         else if(counter == 1){
-            counter -=1;
-            total=discountPrice1+0;
+            // counter -=1;
+            // total=discountPrice1+0;
             normalPrice2 =  np2c;
             discountPrice2 =dp2c;
-        }else if(counter==0){
-            counter =0
-            total=discountPrice1+0;
         }
+        // }else if(counter==0){
+        //     counter =0
+        //     total=discountPrice1+0;
+        // }
        
     }
     document.getElementsByClassName('counter')[1].innerText = counter;
     document.getElementById('price2-discounted').innerHTML='$'+discountPrice2.toFixed(2);
     document.getElementsByClassName('price2')[0].innerText='$'+normalPrice2.toFixed(2);
     document.getElementsByClassName('total')[0].innerText='$'+(total).toFixed(2);
+    document.getElementsByClassName('product_count')[0].innerText=product_count;
 
 };
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
